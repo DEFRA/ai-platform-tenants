@@ -1,0 +1,36 @@
+{
+  "deployments": [
+    {
+      "capacity": 1,
+      "sku": "Standard",
+      "slug": "gpt-4o",
+      "status": "active"
+    }
+  ],
+  "environment": "infradev",
+  "gateway": {
+    "allowedDeployments": [
+      "gpt-4o"
+    ],
+    "credentialType": "oauth",
+    "limits": {
+      "requestsPerMinute": 60,
+      "tokensPerMinute": 1000
+    }
+  },
+  "oauth": {
+    "externalClients": [],
+    "federations": [],
+    "secretsAllowed": true
+  },
+  "operationId": "6ad653de9e1ff00fdada9958",
+  "revision": 1,
+  "schemaVersion": 1,
+  "status": "active",
+  "team": {
+    "serviceCode": "AIP",
+    "slug": "team-test-4"
+  },
+  "updatedAt": "2026-10-19T17:31:10.964Z",
+  "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
+}
