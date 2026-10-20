@@ -1,14 +1,14 @@
 # ai-platform-tenants
 
-Machine-written GitOps state: one team file per team per environment, at `environments/{env}/{slug}.json`. The Portal API writes team files through `submit.yml`; a merge applies the team. One file is platform-owned: `environments/{env}/research.json`. Contract: `docs/gitops-contract.md` in `ai-platform-infra`.
+Machine-written GitOps state: one team file per team per environment, at `environments/{env}/{slug}.json`. The Portal API writes team files through `submit.yml`; a merge applies the team. From the infra release that adds the research tier (ai-platform-infra#18), one file is platform-owned: `environments/{env}/research.json`. Contract: `docs/gitops-contract.md` in `ai-platform-infra`.
 
 ## Review first
 
 - **One whole file, canonical form** (keys sorted, two-space indent, LF), under 60 KB, `revision` increased, file name equals `team.slug`, folder equals `environment`. No secret, email address or name: `updatedBy` is one principal (`entra:`, `github:` or `app:`).
 - **No resource names** in a team file. Only `research.json` carries Azure deployment names.
-- **OAuth only for a team.** `subscription-key` is allowed only in `research.json`, which has no `oauth` block. `research` is not a team name, and a writer App never writes that file: an engineer does, by break-glass pull request.
+- **OAuth only for a team.** `subscription-key` is allowed only in `research.json`, which has no `oauth` block. `research` is not a team name, and a writer App never writes that file: an engineer does, by break-glass pull request. Before the environment's pin includes the research tier, `research.json` fails validation: do not add it.
 - **Capacity and quota.** Deployments name a catalogue model offered to that tier, a non-Global SKU and capacity inside the model's `capacityPolicy`; the sum across teams stays within `quota`. 32 deployments per Foundry account at most.
-- **Removal.** A team leaves through `pending-removal` and then `removed`; only a removed team's file may be deleted. A change that removes more than one team in one apply needs an engineer's `allow_destroy`.
+- **Removal.** A team leaves through `pending-removal` (`removeAfter` at least the environment's cooling-off away) and then `removed`; where the cooling-off is zero, as in Infradev, an active team may go straight to `removed`. Only a removed team's file may be deleted. A change that removes more than one team in one apply needs an engineer's `allow_destroy`.
 - **One environment per pull request**, only under `environments/`.
 
 ## Conventions
