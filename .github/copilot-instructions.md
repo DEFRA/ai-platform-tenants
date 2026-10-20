@@ -24,5 +24,5 @@ Machine-written PRs (`op/*` branches from `submit.yml`) auto-merge on the requir
 1. Branch `<type>/<description>` (`break-glass/{incident}` for incidents); conventional commits.
 2. Validate against the environment's pinned infra release before opening the PR.
 3. State the team, the environment and what the apply will create, change or remove.
-4. **Request Copilot review**: `gh pr edit <n> --add-reviewer "@copilot"`. Answer every comment, then request a human reviewer. Copilot is advisory and never replaces the required approvals.
+4. **Request Copilot review**: `gh pr edit <n> --add-reviewer "@copilot"`. When it lands, fix every comment or reply with the reason it does not apply, push, then resolve each thread (GraphQL `resolveReviewThread`); re-request after a substantial push and repeat until nothing is unresolved. Then request a human reviewer. Copilot is advisory and never replaces the required approvals.
 5. Do not merge your own PR or use the engineers' bypass except as documented.
