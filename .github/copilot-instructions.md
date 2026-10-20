@@ -19,6 +19,8 @@ Machine-written GitOps state: one team file per team per environment, at `enviro
 
 ## Pull requests
 
+Machine-written PRs (`op/*` branches from `submit.yml`) auto-merge on the required check alone. Do not request Copilot or a person on them, and never add a rule that requires either. The steps below are for break-glass and engineer PRs.
+
 1. Branch `<type>/<description>` (`break-glass/{incident}` for incidents); conventional commits.
 2. Validate against the environment's pinned infra release before opening the PR.
 3. State the team, the environment and what the apply will create, change or remove.
