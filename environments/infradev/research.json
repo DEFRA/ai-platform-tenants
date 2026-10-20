@@ -2,32 +2,16 @@
   "deployments": [
     {
       "capacity": 1,
-      "deploymentName": "gpt-4.1-nano",
-      "sku": "DataZoneStandard",
-      "slug": "gpt-4-1-nano",
-      "status": "active"
-    },
-    {
-      "capacity": 1,
       "deploymentName": "gpt-4o",
       "sku": "Standard",
       "slug": "gpt-4o",
-      "status": "active"
-    },
-    {
-      "capacity": 1,
-      "deploymentName": "gpt-5-nano",
-      "sku": "DataZoneStandard",
-      "slug": "gpt-5-nano",
       "status": "active"
     }
   ],
   "environment": "infradev",
   "gateway": {
     "allowedDeployments": [
-      "gpt-4.1-nano",
-      "gpt-4o",
-      "gpt-5-nano"
+      "gpt-4o"
     ],
     "credentialType": "subscription-key",
     "limits": {
@@ -35,7 +19,7 @@
       "tokensPerMinute": 1000
     }
   },
-  "operationId": "21d5de8258395cdc0b97fafc",
+  "operationId": "9d179e11005dabca53734b6f",
   "revision": 1,
   "schemaVersion": 1,
   "status": "active",
@@ -43,6 +27,6 @@
     "serviceCode": "AIP",
     "slug": "research"
   },
-  "updatedAt": "2026-10-20T13:21:24.138Z",
+  "updatedAt": "2026-10-20T13:41:37.923Z",
   "updatedBy": "github:4375643"
 }
