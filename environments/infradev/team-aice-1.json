@@ -1,0 +1,36 @@
+{
+  "deployments": [
+    {
+      "capacity": 1,
+      "sku": "Standard",
+      "slug": "gpt-4o",
+      "status": "active"
+    }
+  ],
+  "environment": "infradev",
+  "gateway": {
+    "allowedDeployments": [
+      "gpt-4o"
+    ],
+    "credentialType": "oauth",
+    "limits": {
+      "requestsPerMinute": 60,
+      "tokensPerMinute": 1000
+    }
+  },
+  "oauth": {
+    "externalClients": [],
+    "federations": [],
+    "secretsAllowed": true
+  },
+  "operationId": "6adb1d7860b0b581ed094dfa",
+  "revision": 1,
+  "schemaVersion": 1,
+  "status": "active",
+  "team": {
+    "serviceCode": "AIP",
+    "slug": "team-aice-1"
+  },
+  "updatedAt": "2026-10-23T08:40:25.090Z",
+  "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
+}
