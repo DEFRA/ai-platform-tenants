@@ -15,11 +15,11 @@ Machine-written GitOps state: one team file per team per environment, at `enviro
 
 - Nobody edits a team file by hand. Use `submit.yml`, or break-glass: branch `break-glass/{incident}`, whole file in canonical form (`node ai-platform-infra/checks/bin/aip-checks.js canonical --file <file>`), advance `revision`, trailer `Break-glass: {incident}`, label `break-glass`, two approvals from other people.
 - Retry a failed apply with a fresh dispatch of `apply.yml`, never a re-run.
-- Workflow callers reference `ai-platform-workflows` at `@v1`; a new major arrives as a Dependabot PR reviewed by an engineer.
+- Workflow callers reference `ai-platform-workflows` at `@v2`; a new major arrives as a Dependabot PR reviewed by an engineer.
 
 ## Pull requests
 
-Machine-written PRs (`op/*` branches from `submit.yml`) auto-merge on the required check alone. Do not request Copilot or a person on them, and never add a rule that requires either. The steps below are for break-glass and engineer PRs.
+`submit.yml` commits to `main` as the App with no pull request, so the pull requests here are break-glass, engineer or `.github/` changes (a `.github/` change needs a code-owner review by `aice-platform-admins`). The steps below are for them.
 
 1. Branch `<type>/<description>` (`break-glass/{incident}` for incidents); conventional commits.
 2. Validate against the environment's pinned infra release before opening the PR.

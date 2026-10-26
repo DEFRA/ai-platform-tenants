@@ -1,0 +1,29 @@
+name: Reconcile all
+
+# Applies every environment from main, whatever changed, nightly and when an
+# engineer dispatches it. It passes all: true and no break-glass input, so the
+# apply's admin-check exemption, keyed on this file on refs/heads/main, applies
+# to an engineer's run. That is why .github/ is code-owned (CODEOWNERS, DD25):
+# change nothing here without a review by aice-platform-admins.
+# docs/async-operations-plan.md section 5, reconcile-all.yml.
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+run-name: reconcile all environments
+
+permissions: {}
+
+jobs:
+  reconcile:
+    uses: DEFRA/ai-platform-workflows/.github/workflows/apply-state.yml@v2
+    secrets: inherit
+    permissions:
+      contents: read
+      deployments: read
+      id-token: write
+    with:
+      state: tenants
+      all: true
