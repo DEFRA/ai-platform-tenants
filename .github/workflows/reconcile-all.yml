@@ -24,6 +24,7 @@ jobs:
       contents: read
       deployments: read
       id-token: write
+      pull-requests: read
     with:
       state: tenants
       all: true
