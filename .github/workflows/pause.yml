@@ -1,0 +1,28 @@
+name: Pause
+
+# An admin sets AIP_PAUSED (true or false) on the {environment}-events
+# Environment in this repository, then runs this to announce it. The run reads
+# the variable, publishes paused or resumed and writes nothing. Admins only:
+# the workflow checks both the actor and whoever re-ran it (AC18).
+# docs/async-operations-plan.md section 5, Pause.
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: The environment whose pause the run announces.
+        type: string
+        required: true
+
+run-name: pause ${{ inputs.environment }}
+
+permissions: {}
+
+jobs:
+  pause:
+    uses: DEFRA/ai-platform-workflows/.github/workflows/pause.yml@v2
+    permissions:
+      contents: read
+      id-token: write
+    with:
+      environment: ${{ inputs.environment }}
