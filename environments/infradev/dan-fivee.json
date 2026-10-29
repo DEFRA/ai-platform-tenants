@@ -1,17 +1,8 @@
 {
-  "deployments": [
-    {
-      "capacity": 1,
-      "sku": "Standard",
-      "slug": "gpt-4o",
-      "status": "active"
-    }
-  ],
+  "deployments": [],
   "environment": "infradev",
   "gateway": {
-    "allowedDeployments": [
-      "gpt-4o"
-    ],
+    "allowedDeployments": [],
     "credentialType": "oauth",
     "limits": {
       "requestsPerMinute": 60,
@@ -23,14 +14,14 @@
     "federations": [],
     "secretsAllowed": true
   },
-  "operationId": "01a188de-27df-7870-9ec2-007da7ffdbf4",
-  "revision": 3,
+  "operationId": "01a189ae-a855-773e-b030-76f8834dd8a9",
+  "revision": 4,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "FVE",
     "slug": "dan-fivee"
   },
-  "updatedAt": "2026-10-29T18:13:43.602Z",
+  "updatedAt": "2026-10-29T22:01:27.649Z",
   "updatedBy": "entra:d35e67ed-ce9b-489f-8ad9-ce44d27ecf41"
 }
