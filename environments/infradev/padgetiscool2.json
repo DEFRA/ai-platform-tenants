@@ -1,17 +1,8 @@
 {
-  "deployments": [
-    {
-      "capacity": 1,
-      "sku": "Standard",
-      "slug": "gpt-4o",
-      "status": "active"
-    }
-  ],
+  "deployments": [],
   "environment": "infradev",
   "gateway": {
-    "allowedDeployments": [
-      "gpt-4o"
-    ],
+    "allowedDeployments": [],
     "credentialType": "oauth",
     "limits": {
       "requestsPerMinute": 60,
@@ -23,14 +14,14 @@
     "federations": [],
     "secretsAllowed": true
   },
-  "operationId": "01a1883c-e9b4-72b5-981d-994f8cbfea18",
-  "revision": 1,
+  "operationId": "01a18877-c597-710f-8918-5920685550f5",
+  "revision": 2,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "PAD",
     "slug": "padgetiscool2"
   },
-  "updatedAt": "2026-10-29T15:17:36.085Z",
+  "updatedAt": "2026-10-29T16:21:53.400Z",
   "updatedBy": "entra:53522fdb-f3ad-4c5e-9866-d84f1ce63ad5"
 }
