@@ -16,6 +16,7 @@ Machine-written GitOps state: one team file per team per environment, at `enviro
 - Nobody edits a team file by hand. Use `submit.yml`, or break-glass: branch `break-glass/{incident}`, whole file in canonical form (`node ai-platform-infra/checks/bin/aip-checks.js canonical --file <file>`), advance `revision`, trailer `Break-glass: {incident}`, label `break-glass`, two approvals from other people.
 - Retry a failed apply by re-running its failed jobs (an engineer may, for the latest portal or push run; a run that is no longer the head of `main` is refused as `superseded`) or by dispatching `reconcile-all.yml`. A fresh hand dispatch of `apply.yml`, a hand `submit.yml`, `pause.yml` and `allow_destroy`/`force_unlock` need the repository admin role, for the actor and whoever re-ran it; anyone else fails the admin check (AC18).
 - Workflow callers reference `ai-platform-workflows` at `@v2`; a new major arrives as a Dependabot PR reviewed by an engineer.
+- **One GitHub Environment per core environment** (`infradev`, later `dev`, `test`, `preprod`, `prod`), named exactly as its `environments/{env}/` folder. Never add a prefix or suffix Environment (`{env}-events`, `{env}-plan`) or a folder for one; the workflows read `{env}` with `deployment: false` when they must not record a Deployment. Add an environment by the checklist in `ai-platform-workflows` README, "Adding an environment".
 
 ## Pull requests
 

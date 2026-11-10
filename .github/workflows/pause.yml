@@ -1,7 +1,6 @@
 name: Pause
 
-# An admin sets AIP_PAUSED (true or false) on the {environment}-events
-# Environment in this repository, then runs this to announce it. The run reads
+# An admin sets AIP_PAUSED (true or false) on the {environment} Environment
 # the variable, publishes paused or resumed and writes nothing. Admins only:
 # the workflow checks both the actor and whoever re-ran it (AC18).
 # docs/async-operations-plan.md section 5, Pause.
