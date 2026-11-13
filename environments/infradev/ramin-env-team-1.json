@@ -1,0 +1,36 @@
+{
+  "deployments": [
+    {
+      "capacity": 1,
+      "sku": "Standard",
+      "slug": "gpt-4o",
+      "status": "active"
+    }
+  ],
+  "environment": "infradev",
+  "gateway": {
+    "allowedDeployments": [
+      "gpt-4o"
+    ],
+    "credentialType": "oauth",
+    "limits": {
+      "requestsPerMinute": 60,
+      "tokensPerMinute": 1000
+    }
+  },
+  "oauth": {
+    "externalClients": [],
+    "federations": [],
+    "secretsAllowed": true
+  },
+  "operationId": "01a1d584-0d94-7f3c-ad25-0322262f7301",
+  "revision": 1,
+  "schemaVersion": 1,
+  "status": "active",
+  "team": {
+    "serviceCode": "AIP",
+    "slug": "ramin-env-team-1"
+  },
+  "updatedAt": "2026-11-13T15:26:03.936Z",
+  "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
+}
