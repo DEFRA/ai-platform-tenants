@@ -20,23 +20,17 @@
   },
   "oauth": {
     "externalClients": [],
-    "federations": [
-      {
-        "host": "cdp",
-        "name": "dsfsd",
-        "service": "dsfsd"
-      }
-    ],
+    "federations": [],
     "secretsAllowed": true
   },
-  "operationId": "01a1d576-95d9-743f-8081-e34409f7a323",
-  "revision": 2,
+  "operationId": "01a1d599-53be-7c2d-9b1e-1699e7d1845c",
+  "revision": 3,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "AIP",
     "slug": "ramin-envirinment-team-1"
   },
-  "updatedAt": "2026-11-13T15:11:21.253Z",
+  "updatedAt": "2026-11-13T15:49:18.135Z",
   "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
 }
