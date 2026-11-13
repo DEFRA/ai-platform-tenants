@@ -11,23 +11,17 @@
   },
   "oauth": {
     "externalClients": [],
-    "federations": [
-      {
-        "host": "cdp",
-        "name": "dgdrg",
-        "service": "dgdrg"
-      }
-    ],
+    "federations": [],
     "secretsAllowed": true
   },
-  "operationId": "01a1d591-8774-72f9-81ea-269fa79c65fd",
-  "revision": 3,
+  "operationId": "01a1d591-d497-70dc-b4ec-800390c7319c",
+  "revision": 4,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "AIP",
     "slug": "ramin-env-team-1"
   },
-  "updatedAt": "2026-11-13T15:40:47.072Z",
+  "updatedAt": "2026-11-13T15:44:21.815Z",
   "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
 }
