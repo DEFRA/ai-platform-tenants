@@ -17,18 +17,23 @@
         "issuer": "https://login.microsoftonline.com/770a2450-0227-4c62-90c7-4e38537f1102/v2.0",
         "name": "sdfdsfsdfs",
         "subject": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "host": "cdp",
+        "name": "dsf",
+        "service": "dsf"
       }
     ],
     "secretsAllowed": true
   },
-  "operationId": "01a1d59d-b687-710d-a401-075c73d799a4",
-  "revision": 5,
+  "operationId": "01a1e512-d6dd-76d9-9a40-ab5ee27d725f",
+  "revision": 6,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "AIP",
     "slug": "ramin-env-team-1"
   },
-  "updatedAt": "2026-11-13T15:54:05.544Z",
+  "updatedAt": "2026-11-16T15:56:19.786Z",
   "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
 }
