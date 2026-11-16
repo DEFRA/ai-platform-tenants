@@ -1,8 +1,17 @@
 {
-  "deployments": [],
+  "deployments": [
+    {
+      "capacity": 1,
+      "sku": "Standard",
+      "slug": "gpt-4o",
+      "status": "active"
+    }
+  ],
   "environment": "infradev",
   "gateway": {
-    "allowedDeployments": [],
+    "allowedDeployments": [
+      "gpt-4o"
+    ],
     "credentialType": "oauth",
     "limits": {
       "requestsPerMinute": 60,
@@ -14,14 +23,14 @@
     "federations": [],
     "secretsAllowed": true
   },
-  "operationId": "01a1aced-9187-7fd1-bf78-ea4c8adbbb73",
-  "revision": 4,
+  "operationId": "01a1e515-b51c-77e2-abab-11ad2c6f950a",
+  "revision": 5,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "PAG",
     "slug": "dans-cool-team-not"
   },
-  "updatedAt": "2026-11-05T18:16:53.140Z",
+  "updatedAt": "2026-11-16T15:59:27.738Z",
   "updatedBy": "entra:d35e67ed-ce9b-489f-8ad9-ce44d27ecf41"
 }
