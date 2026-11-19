@@ -20,17 +20,23 @@
   },
   "oauth": {
     "externalClients": [],
-    "federations": [],
+    "federations": [
+      {
+        "host": "cdp",
+        "name": "dfgdf",
+        "service": "dfgdf"
+      }
+    ],
     "secretsAllowed": true
   },
-  "operationId": "01a1f54a-68eb-7acf-a367-c14b983d7728",
-  "revision": 1,
+  "operationId": "01a1f54d-b491-7eee-9d59-28ef12e3820b",
+  "revision": 2,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "AIP",
     "slug": "ram-tt-11"
   },
-  "updatedAt": "2026-11-19T19:30:57.141Z",
+  "updatedAt": "2026-11-19T19:34:33.022Z",
   "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
 }
