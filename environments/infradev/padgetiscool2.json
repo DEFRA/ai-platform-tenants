@@ -20,17 +20,23 @@
   },
   "oauth": {
     "externalClients": [],
-    "federations": [],
+    "federations": [
+      {
+        "host": "cdp",
+        "name": "cnhcgnfc",
+        "service": "cnhcgnfc"
+      }
+    ],
     "secretsAllowed": true
   },
-  "operationId": "01a18c0d-9eb1-779f-b1bd-8d34db0e1f74",
-  "revision": 3,
+  "operationId": "01a1f3ba-92d2-7c3f-bbe0-7039982826a5",
+  "revision": 4,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "PAD",
     "slug": "padgetiscool2"
   },
-  "updatedAt": "2026-10-30T09:04:25.491Z",
-  "updatedBy": "entra:53522fdb-f3ad-4c5e-9866-d84f1ce63ad5"
+  "updatedAt": "2026-11-19T12:14:13.387Z",
+  "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
 }
