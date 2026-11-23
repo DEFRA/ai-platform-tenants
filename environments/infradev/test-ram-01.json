@@ -20,17 +20,23 @@
   },
   "oauth": {
     "externalClients": [],
-    "federations": [],
+    "federations": [
+      {
+        "host": "cdp",
+        "name": "sdfgds",
+        "service": "sdfgds"
+      }
+    ],
     "secretsAllowed": true
   },
-  "operationId": "01a207cf-5ad1-70ef-a631-ae93ae6b6721",
-  "revision": 1,
+  "operationId": "01a207d2-944c-7d29-89fa-1a3ecfb5079b",
+  "revision": 2,
   "schemaVersion": 1,
   "status": "active",
   "team": {
     "serviceCode": "AIP",
     "slug": "test-ram-01"
   },
-  "updatedAt": "2026-11-23T09:49:19.720Z",
+  "updatedAt": "2026-11-23T09:52:50.981Z",
   "updatedBy": "entra:ee43727f-77db-4154-81b6-f65c9dd900d4"
 }
