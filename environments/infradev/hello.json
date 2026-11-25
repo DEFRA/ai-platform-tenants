@@ -1,0 +1,36 @@
+{
+  "deployments": [
+    {
+      "capacity": 1,
+      "sku": "Standard",
+      "slug": "gpt-4o",
+      "status": "active"
+    }
+  ],
+  "environment": "infradev",
+  "gateway": {
+    "allowedDeployments": [
+      "gpt-4o"
+    ],
+    "credentialType": "oauth",
+    "limits": {
+      "requestsPerMinute": 60,
+      "tokensPerMinute": 1000
+    }
+  },
+  "oauth": {
+    "externalClients": [],
+    "federations": [],
+    "secretsAllowed": true
+  },
+  "operationId": "01a2127a-cd49-779a-8112-9f04d5d6ed33",
+  "revision": 1,
+  "schemaVersion": 1,
+  "status": "active",
+  "team": {
+    "serviceCode": "SDP",
+    "slug": "hello"
+  },
+  "updatedAt": "2026-11-25T11:32:47.831Z",
+  "updatedBy": "entra:d35e67ed-ce9b-489f-8ad9-ce44d27ecf41"
+}
